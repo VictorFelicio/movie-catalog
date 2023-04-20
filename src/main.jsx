@@ -6,6 +6,7 @@ import { App } from "./App";
 import { Home } from "./routes/pages/Home/Home";
 import { Movie } from "./routes/pages/Movie/Movie";
 import { Error } from "./routes/pages/Error/Error";
+import { Favorites } from "./routes/pages/Favorites/Favorites";
 
 const router = createBrowserRouter([
   {
@@ -21,8 +22,8 @@ const router = createBrowserRouter([
         element: <Movie />,
       },
       {
-        path: "/movie",
-        element: <Movie />,
+        path: "/favorites",
+        element: <Favorites />,
       },
     ],
     errorElement: <Error />,
