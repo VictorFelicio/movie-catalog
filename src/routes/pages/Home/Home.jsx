@@ -23,14 +23,14 @@ export const Home = () => {
       setMovies(response.data.results.slice(0, 10));
       setTimeout(() => {
         setIsLoading(false);
-      }, 1800);
+      }, 1000);
     }
 
     loadingMoviesApi();
   }, []);
 
   if (isLoading) {
-    return <div>Carregando filmes .....</div>;
+    return <div>Carregando filmes HOME.....</div>;
   }
 
   return (
